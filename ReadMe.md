@@ -45,5 +45,12 @@ Since we are storing the state of DB, the credentials and other sensitive inform
 for demoing purposes and is **not** for production use case. 
 The serialization of dashboard is available in metabase Enterprice version only.
 
+* If you do not need to view pre-built then that is all what you need.
+You can visit http://localhost:3000 and complete the setup.
 
-* Navigate to the url http://localhost:3000/dashboard/2-faang-stock-prices to get the dashboard for the data. 
+
+* Run data dump by
+```
+     docker exec  <db_cotainer_name> psql my_db user -f data/data_dump.sql
+```
+Navigate to the url http://localhost:3000/dashboard/2-faang-stock-prices to get the dashboard for the data. 
