@@ -20,6 +20,7 @@ I am using [metabase](https://www.metabase.com/) to create visualizations.
 
 ## How to get started
 * Clone the repository
+* Rename `env.template` to `.env` file
 * Install docker compose https://docker-docs.netlify.app/compose/install/#install-compose
 * execute following command to kick off the services from within the repository
    ```
@@ -54,3 +55,6 @@ You can visit http://localhost:3000 and complete the setup.
      docker exec  <db_cotainer_name> psql my_db user -f data/data_dump.sql
 ```
 Navigate to the url http://localhost:3000/dashboard/2-faang-stock-prices to get the dashboard for the data. 
+
+Sample Dashboard
+![alt text](docs/images/faang_stock_prices.png)
